@@ -1,5 +1,13 @@
 .layout__title {
-  font-size: 24pt;
+  position: relative;
+  font-size: 20pt;
   margin: 0;
   padding: 20px;
+  background-color: black;
+  color: white;
+}
+
+.logo {
+  width: 147px;
+  height: 76px;
 }

@@ -11,14 +11,22 @@ const Layout = () => {
   return (
     <BrowserRouter>
       <div className='layout'>
-      <img src={Logo} alt='logo' />
-        <h1 className='layout__title'>Interfaz energética</h1>
-        <NavBar />
+        <h1 className='layout__title'>
+          <img className ='logo' src={Logo} alt='logo' />
+        </h1>
         <div className='layout__page'>
-          <Routes>
-            <Route path='/' element={<HomePage />} />
-            <Route path='/lightbulb' element={<LightbulbPage />} />
-          </Routes>
+          <h1>
+            XXXII Feria de Software - 2024
+          </h1>
+          <h2>
+            Categoría Health Tech / Salud y Bienestar
+          </h2>
+          <h2>
+            Categoría Automatización & DT / Industrias y Desarrollo
+          </h2>
+          <h2>
+            Categoría Ed-Tech / Educación y Prevención
+          </h2>
         </div>
       </div>
     </BrowserRouter>
