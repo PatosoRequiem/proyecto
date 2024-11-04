@@ -1,0 +1,50 @@
+.sobre-nosotros-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+
+    h1 {
+        font-size: 3rem;
+    }
+}
+
+.content-container {
+    display: flex;
+    flex-direction: row; // Asegura que estén en una fila
+    justify-content: space-between;
+    align-items: flex-start; // Alinea los elementos al inicio
+    width: 100%; // Asegura que ocupe todo el ancho disponible
+    gap: 20px; // Espacio entre la imagen y el párrafo
+}
+
+.paragraph-section {
+    flex: 0 1 60%; // Usa flex-grow y flex-basis para controlar el ancho
+    max-width: 60%;
+    font-size: 2rem;
+}
+
+.image-section {
+    flex: 0 1 30%; // Usa flex-grow y flex-basis para controlar el ancho
+    max-width: 30%;
+}
+
+.return-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+/* Media query para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .paragraph-section,
+    .image-section {
+        flex: 0 1 100%;
+        max-width: 100%;
+        margin-bottom: 16px;
+    }
+
+    .content-container {
+        flex-direction: column;
+    }
+}

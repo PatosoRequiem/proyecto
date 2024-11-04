@@ -2,7 +2,7 @@ import React from 'react';
 import Logo from '../assets/fesw.png'; 
 import PresentationImage from '../assets/presentacion-corporativa.png'; 
 
-const ProjectPage = () => {
+const Proyecto1 = () => {
     return (
     <div style={{ backgroundColor: '#1a1a1a', color: 'white', fontFamily: 'Arial, sans-serif', padding: '20px' }}>
       {/* Header */}

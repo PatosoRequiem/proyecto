@@ -1,0 +1,86 @@
+.streaming-container {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+
+    h1 {
+        font-size: 2rem;
+        font-weight: bold;
+        margin-left: 10px;
+    }
+}
+
+.return-icon {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: row; // Alinea los elementos en una fila
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%; // Asegura que ocupe todo el ancho disponible
+    gap: 20px;
+    flex-wrap: nowrap; // Previene que los elementos se envuelvan en otra línea
+}
+
+.streaming-image-section {
+    flex: 1 1 50%; // Ocupa el 50% del ancho disponible
+    max-width: 50%;
+    img {
+        width: 100%; // Asegura que la imagen ocupe todo el ancho de la sección
+        height: auto; // Mantiene la proporción de la imagen
+    }
+}
+
+.chat-section {
+    flex: 1 1 50%; // Ocupa el 50% del ancho disponible
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+    max-height: 500px;
+    min-height: 300px; // Establece una altura mínima
+}
+
+.chat-messages {
+    flex: 1;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    padding: 5px;
+}
+
+.chat-message {
+    margin-bottom: 8px;
+    padding: 8px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    color: black; // Color de texto en negro para los mensajes
+}
+
+.chat-input {
+    display: flex;
+    gap: 8px;
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    color: black; // Color de texto en negro para el campo de entrada
+}
+
+.chat-input button {
+    padding: 8px 12px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}

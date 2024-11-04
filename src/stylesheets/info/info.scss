@@ -1,0 +1,50 @@
+.informacion-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+
+    h1 {
+        font-size: 3rem; // Tamaño grande para el título, puedes ajustar aquí si es necesario
+    }
+}
+
+.content-container {
+    display: flex;
+    flex-direction: row; // Asegura que los elementos estén en una fila
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%; // Asegura que el contenedor ocupe todo el ancho disponible
+    gap: 20px; // Espacio entre la imagen y el párrafo
+}
+
+.paragraph-section {
+    flex: 0 1 60%; // Usa flex-basis y flex-grow para controlar el ancho
+    max-width: 60%;
+    font-size: 2rem; // Tamaño más grande para el párrafo, puedes ajustar aquí si es necesario
+}
+
+.image-section {
+    flex: 0 1 30%; // Usa flex-basis y flex-grow para controlar el ancho
+    max-width: 30%;
+}
+
+.return-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+/* Media query para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .paragraph-section,
+    .image-section {
+        flex: 0 1 100%; // Ocupa el 100% del ancho en pantallas pequeñas
+        max-width: 100%;
+        margin-bottom: 16px;
+    }
+
+    .content-container {
+        flex-direction: column; // Cambia a columna en pantallas pequeñas
+    }
+}
