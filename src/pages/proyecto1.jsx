@@ -1,34 +1,45 @@
 import React from 'react';
-import Logo from '../assets/fesw.png'; 
-import PresentationImage from '../assets/presentacion-corporativa.png'; 
+import YouTube from "react-youtube";
+import { Link } from 'react-router-dom';
+import Logo from '../assets/fesw.png';
 
 const Proyecto1 = () => {
-    return (
-    <div style={{ backgroundColor: '#1a1a1a', color: 'white', fontFamily: 'Arial, sans-serif', padding: '20px' }}>
-      {/* Header */}
-        <header style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', paddingBottom: '20px' }}>
-        <div style={{ display: 'flex', alignItems: 'center' }}>
-            <img src={Logo} alt="FESW Logo" style={{ height: '50px', marginRight: '10px' }} />
-            <h1 style={{ fontSize: '1.2em' }}>XXXII Feria de Software Virtual</h1>
-        </div>
-        <div>
-            <h2 style={{ margin: '0' }}>Proyecto X</h2>
-            <p style={{ margin: '0' }}>Por Equipo Y</p>
-        </div>
-        </header>
+    const videoOptions = {
+        width: "100%",
+        height: "100%",
+        playerVars: {
+            autoplay: 0,
+        },
+    };
 
-      {/* contenido principal */}
-        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-        <div style={{ backgroundColor: '#d9d9d9', borderRadius: '20px', padding: '20px', width: '70%' }}>
-            <img src={PresentationImage} alt="Presentation" style={{ width: '100%' }} />
+    return (
+        <div style={{ backgroundColor: '#1a1a1a', color: 'white', fontFamily: 'Arial, sans-serif', padding: '20px' }}>
+            {/* contenido principal */}
+            <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                <div style={{
+                    backgroundColor: '#d9d9d9',
+                    borderRadius: '20px',
+                    overflow: 'hidden',
+                    width: '70%',
+                    position: 'relative',
+                    paddingBottom: '40%', // 16:9 aspect ratio
+                    height: 0
+                }}>
+                    <YouTube videoId="TigjN-ZZWqk" opts={videoOptions} style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }} />
+                </div>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', marginLeft: '20px' }}>
+                    <Link to="/proyecto1/informacion" style={{ textDecoration: 'none' }}>
+                        <button style={buttonStyle}>Información del Proyecto</button>
+                    </Link>
+                    <Link to="/proyecto1/sobre-nosotros" style={{ textDecoration: 'none' }}>
+                        <button style={buttonStyle}>Sobre Nosotros</button>
+                    </Link>
+                    <Link to="/proyecto1/streaming" style={{ textDecoration: 'none' }}>
+                        <button style={buttonStyle}>Streaming</button>
+                    </Link>
+                </div>
+            </div>
         </div>
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', marginLeft: '20px' }}>
-            <button style={buttonStyle}>Información del Proyecto</button>
-            <button style={buttonStyle}>Sobre Nosotros</button>
-            <button style={buttonStyle}>Streaming</button>
-        </div>
-        </div>
-    </div>
     );
 };
 
