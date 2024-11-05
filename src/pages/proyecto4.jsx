@@ -1,8 +1,9 @@
 import React from 'react';
 import YouTube from "react-youtube";
 import { Link } from 'react-router-dom';
+import Logo from '../assets/fesw.png';
 
-const Proyecto1 = () => {
+const Proyecto4 = () => {
     const videoOptions = {
         width: "100%",
         height: "100%",
@@ -24,7 +25,7 @@ const Proyecto1 = () => {
                     paddingBottom: '40%', // 16:9 aspect ratio
                     height: 0
                 }}>
-                    <YouTube videoId="TigjN-ZZWqk" opts={videoOptions} style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }} />
+                    <YouTube videoId="MIhcOslpRDc" opts={videoOptions} style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }} />
                 </div>
                 <div style={{
                     display: 'flex',
@@ -33,13 +34,13 @@ const Proyecto1 = () => {
                     marginLeft: '20px',
                     width: '30%', // Ocupa todo el lado derecho
                 }}>
-                    <Link to="/proyecto1/informacion" style={{ textDecoration: 'none' }}>
+                    <Link to="/proyecto4/informacion" style={{ textDecoration: 'none' }}>
                         <button style={buttonStyle}>Información del Proyecto</button>
                     </Link>
-                    <Link to="/proyecto1/sobre-nosotros" style={{ textDecoration: 'none' }}>
+                    <Link to="/proyecto4/sobre-nosotros" style={{ textDecoration: 'none' }}>
                         <button style={buttonStyle}>Sobre Nosotros</button>
                     </Link>
-                    <Link to="/proyecto1/streaming" style={{ textDecoration: 'none' }}>
+                    <Link to="/proyecto4/streaming" style={{ textDecoration: 'none' }}>
                         <button style={buttonStyle}>Streaming</button>
                     </Link>
                 </div>
@@ -59,4 +60,4 @@ const buttonStyle = {
     width: '100%' 
 };
 
-export default Proyecto1;
+export default Proyecto4;
