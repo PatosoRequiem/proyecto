@@ -1,7 +1,8 @@
 import React from 'react';
 import YouTube from "react-youtube";
 import { Link } from 'react-router-dom';
-import Logo from '../assets/fesw.png';
+import returnIcon from "../assets/return.png";
+import '../stylesheets/button.scss';
 
 const Proyecto26 = () => {
     const videoOptions = {
@@ -15,6 +16,13 @@ const Proyecto26 = () => {
     return (
         <div style={{ backgroundColor: '#1a1a1a', color: 'white', fontFamily: 'Arial, sans-serif', padding: '20px' }}>
             {/* contenido principal */}
+            <Link to="/">
+                <img 
+                src={returnIcon} 
+                alt="Return" 
+                className="return-icon" 
+                />
+            </Link>
             <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                 <div style={{
                     backgroundColor: '#d9d9d9',
