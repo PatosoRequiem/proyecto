@@ -4,6 +4,35 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './header';
 import HomePage from '../pages/home_page';
 import Proyecto1 from '../pages/proyecto1';
+import Proyecto2 from '../pages/proyecto2';
+import Proyecto3 from '../pages/proyecto3';
+import Proyecto4 from '../pages/proyecto4';
+import Proyecto5 from '../pages/proyecto5';
+import Proyecto6 from '../pages/proyecto6';
+import Proyecto7 from '../pages/proyecto7';
+import Proyecto8 from '../pages/proyecto8';
+import Proyecto9 from '../pages/proyecto9';
+import Proyecto10 from '../pages/proyecto10';
+import Proyecto11 from '../pages/proyecto11';
+import Proyecto12 from '../pages/proyecto12';
+import Proyecto13 from '../pages/proyecto13';
+import Proyecto14 from '../pages/proyecto14';
+import Proyecto15 from '../pages/proyecto15';
+import Proyecto16 from '../pages/proyecto16';
+import Proyecto17 from '../pages/proyecto17';
+import Proyecto18 from '../pages/proyecto18';
+import Proyecto19 from '../pages/proyecto19';
+import Proyecto20 from '../pages/proyecto20';
+import Proyecto21 from '../pages/proyecto21';
+import Proyecto22 from '../pages/proyecto22';
+import Proyecto23 from '../pages/proyecto23';
+import Proyecto24 from '../pages/proyecto24';
+import Proyecto25 from '../pages/proyecto25';
+import Proyecto26 from '../pages/proyecto26';
+import Proyecto27 from '../pages/proyecto27';
+import Proyecto28 from '../pages/proyecto28';
+import Proyecto29 from '../pages/proyecto29';
+import Proyecto30 from '../pages/proyecto30';
 import SobNos1 from '../pages/sobre-nosotros1';
 import Info1 from '../pages/informacion1';
 import Streaming1 from '../pages/streaming1';
@@ -106,6 +135,35 @@ const Layout = () => {
         <Routes>
           <Route path='/' element={<HomePage />} />
           <Route path='/proyecto1' element={<Proyecto1/>} />
+          <Route path='/proyecto2' element={<Proyecto2/>} />
+          <Route path='/proyecto3' element={<Proyecto3/>} />
+          <Route path='/proyecto4' element={<Proyecto4/>} />
+          <Route path='/proyecto5' element={<Proyecto5/>} />
+          <Route path='/proyecto6' element={<Proyecto6/>} />
+          <Route path='/proyecto7' element={<Proyecto7/>} />
+          <Route path='/proyecto8' element={<Proyecto8/>} />
+          <Route path='/proyecto9' element={<Proyecto9/>} />
+          <Route path='/proyecto10' element={<Proyecto10/>} />
+          <Route path='/proyecto11' element={<Proyecto11/>} />
+          <Route path='/proyecto12' element={<Proyecto12/>} />
+          <Route path='/proyecto13' element={<Proyecto13/>} />
+          <Route path='/proyecto14' element={<Proyecto14/>} />
+          <Route path='/proyecto15' element={<Proyecto15/>} />
+          <Route path='/proyecto16' element={<Proyecto16/>} />
+          <Route path='/proyecto17' element={<Proyecto17/>} />
+          <Route path='/proyecto18' element={<Proyecto18/>} />
+          <Route path='/proyecto19' element={<Proyecto19/>} />
+          <Route path='/proyecto20' element={<Proyecto20/>} />
+          <Route path='/proyecto21' element={<Proyecto21/>} />
+          <Route path='/proyecto22' element={<Proyecto22/>} />
+          <Route path='/proyecto23' element={<Proyecto23/>} />
+          <Route path='/proyecto24' element={<Proyecto24/>} />
+          <Route path='/proyecto25' element={<Proyecto25/>} />
+          <Route path='/proyecto26' element={<Proyecto26/>} />
+          <Route path='/proyecto27' element={<Proyecto27/>} />
+          <Route path='/proyecto28' element={<Proyecto28/>} />
+          <Route path='/proyecto29' element={<Proyecto29/>} />
+          <Route path='/proyecto30' element={<Proyecto30/>} />          
           <Route path='/proyecto1/sobre-nosotros' element={<SobNos1 />} />
           <Route path='/proyecto1/informacion' element={<Info1 />} />
           <Route path='/proyecto1/streaming' element={<Streaming1 />} />
