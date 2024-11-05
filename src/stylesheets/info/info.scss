@@ -5,6 +5,7 @@
 
     h1 {
         font-size: 3rem; // Tamaño grande para el título, puedes ajustar aquí si es necesario
+        color: white;
     }
 }
 
@@ -21,6 +22,7 @@
     flex: 0 1 60%; // Usa flex-basis y flex-grow para controlar el ancho
     max-width: 60%;
     font-size: 2rem; // Tamaño más grande para el párrafo, puedes ajustar aquí si es necesario
+    color: white;
 }
 
 .image-section {
