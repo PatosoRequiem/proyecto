@@ -2,6 +2,7 @@
     display: flex;
     align-items: center;
     margin-bottom: 16px;
+    margin-left: 16px;
 
     h1 {
         font-size: 3rem; // Tamaño grande para el título, puedes ajustar aquí si es necesario
@@ -11,6 +12,7 @@
 
 .content-container {
     display: flex;
+    margin-left: 16px;
     flex-direction: row; // Asegura que los elementos estén en una fila
     justify-content: space-between;
     align-items: flex-start;

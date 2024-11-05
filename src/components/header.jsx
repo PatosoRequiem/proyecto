@@ -7,7 +7,7 @@ const Header = () => {
     return (
         <div>
             <h1>
-                <img className='logo' src={Logo} alt='logo' onClick={() => navigate("/")}/>
+                <img className='logo' src={Logo} alt='logo' style={{ cursor: 'pointer' }} onClick={() => navigate("/")}/>
                 {" "}
                 XXXII Feria de Software 2024
             </h1>
