@@ -5,6 +5,7 @@
 
     h1 {
         font-size: 3rem;
+        color: white;
     }
 }
 
@@ -21,6 +22,7 @@
     flex: 0 1 60%; // Usa flex-grow y flex-basis para controlar el ancho
     max-width: 60%;
     font-size: 2rem;
+    color: white;
 }
 
 .image-section {
