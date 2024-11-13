@@ -1,5 +1,6 @@
 .singleLineImageContainer {
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
     background: #08070a;
     overflow: auto;
@@ -10,6 +11,7 @@
 }
 
 .text {
+    color: white;
     text-align: center;
     font-size: 12pt;
 }
