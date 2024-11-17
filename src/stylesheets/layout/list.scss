@@ -4,14 +4,27 @@
     width: 100%;
     background: #08070a;
     overflow: auto;
+    padding: 8px;
   }
-
-.containerElement {
-    margin: 10px;
-}
 
 .text {
     color: white;
     text-align: center;
+    font-size: 14pt;
+}
+
+.summary {
+    color: white;
+    text-align: center;
     font-size: 12pt;
+}
+
+.thumbnail {
+    cursor: pointer;
+    max-width: 70%;
+    max-height: auto;
+    margin: auto;
+    display: block;
+    padding: 16px;
+    border-radius: 32px;
 }

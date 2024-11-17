@@ -33,7 +33,7 @@ const Proyecto8 = () => {
                     paddingBottom: '40%', // 16:9 aspect ratio
                     height: 0
                 }}>
-                    <YouTube videoId="e4ZFR21vtzQ&t=1s" opts={videoOptions} style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }} />
+                    <YouTube videoId="e4ZFR21vtzQ" opts={videoOptions} style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }} />
                 </div>
                 <div style={{
                     display: 'flex',
